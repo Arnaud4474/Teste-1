@@ -15,11 +15,18 @@
 
 <header class="header">
     <h1>Dr. Adilson Matheus</h1>
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato" class="btn-nav">Contato</a>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato" class="btn-nav">Contato</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
 </header>
 
@@ -27,7 +34,7 @@
     <div class="hero-content">
         <h2>Cuidando do seu sorriso com excelência</h2>
         <p>Odontologia moderna, segura e humanizada</p>
-        <button onclick="rolarContato()">Agendar Consulta</button>
+        <button onclick="window.open('https://wa.me/5511999999999', '_blank')">Agendar Agora</button>
     </div>
 </section>
 
@@ -62,8 +69,11 @@
 </section>
 
 <footer>
-    <p>© 2026 • Clínica Odontológica Dr. Adilson Matheus</p>
+    <p>© 2026 • Clínica Odontológica Dr. João Silva</p>
 </footer>
+
+<!-- WhatsApp Flutuante -->
+<a href="https://wa.me/5511999999999" class="whatsapp" target="_blank">💬</a>
 
 <script src="script.js"></script>
 </body>
