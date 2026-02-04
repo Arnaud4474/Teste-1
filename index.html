@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. João Silva | Clínica Odontológica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dr. João Silva</h1>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+        <h2>Sorriso saudável começa aqui</h2>
+        <p>Atendimento humanizado e tecnologia de ponta</p><br>
+        <button onclick="rolarContato()">Agendar Consulta</button>
+    </div>
+</section>
+
+<section id="servicos">
+    <h3>Nossos Serviços</h3>
+    <div class="services">
+        <div class="card">
+            <h4>Clínica Geral</h4>
+            <p>Prevenção, limpeza e tratamentos básicos.</p>
+        </div>
+        <div class="card">
+            <h4>Ortodontia</h4>
+            <p>Aparelhos modernos e discretos.</p>
+        </div>
+        <div class="card">
+            <h4>Implantes</h4>
+            <p>Recupere sua mastigação e autoestima.</p>
+        </div>
+        <div class="card">
+            <h4>Estética Dental</h4>
+            <p>Clareamento e harmonização do sorriso.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sobre">
+    <h3>Sobre o Dentista</h3>
+    <div class="about">
+        <p>
+            Dr. João Silva é cirurgião-dentista com mais de 10 anos de experiência,
+            oferecendo atendimento ético, moderno e focado no bem-estar do paciente.
+        </p>
+    </div>
+</section>
+
+<section id="contato" class="contact">
+    <h3>Contato</h3>
+    <form onsubmit="enviarFormulario(event)">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="4" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 - Clínica Odontológica Dr. João Silva</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
