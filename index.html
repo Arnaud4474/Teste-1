@@ -2,79 +2,69 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Dr. Adilson Matheus| Clínica Odontológica</title>
+    <title>Dr. João Silva | Clínica Odontológica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Dr. Adilson Matheus</h1>
+<header class="header">
+    <h1>Dr. João Silva</h1>
     <nav>
         <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
         <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn-nav">Contato</a>
     </nav>
 </header>
 
 <section class="hero" id="inicio">
-    <div>
-        <h2>Sorriso saudável começa aqui</h2>
-        <p>Atendimento humanizado e tecnologia de ponta</p><br>
+    <div class="hero-content">
+        <h2>Cuidando do seu sorriso com excelência</h2>
+        <p>Odontologia moderna, segura e humanizada</p>
         <button onclick="rolarContato()">Agendar Consulta</button>
     </div>
 </section>
 
 <section id="servicos">
-    <h3>Nossos Serviços</h3>
+    <h3>Especialidades</h3>
     <div class="services">
-        <div class="card">
-            <h4>Clínica Geral</h4>
-            <p>Prevenção, limpeza e tratamentos básicos.</p>
-        </div>
-        <div class="card">
-            <h4>Ortodontia</h4>
-            <p>Aparelhos modernos e discretos.</p>
-        </div>
-        <div class="card">
-            <h4>Implantes</h4>
-            <p>Recupere sua mastigação e autoestima.</p>
-        </div>
-        <div class="card">
-            <h4>Estética Dental</h4>
-            <p>Clareamento e harmonização do sorriso.</p>
-        </div>
+        <div class="card">🦷<h4>Clínica Geral</h4><p>Prevenção e saúde bucal.</p></div>
+        <div class="card">😁<h4>Ortodontia</h4><p>Aparelhos modernos.</p></div>
+        <div class="card">🔩<h4>Implantes</h4><p>Sorriso funcional.</p></div>
+        <div class="card">✨<h4>Estética Dental</h4><p>Sorriso perfeito.</p></div>
     </div>
 </section>
 
-<section id="sobre">
-    <h3>Sobre o Dentista</h3>
-    <div class="about">
+<section id="sobre" class="sobre">
+    <div>
+        <h3>Sobre o Doutor</h3>
         <p>
-            Dr. Adilson Matheus é cirurgião-dentista com mais de 10 anos de experiência,
-            oferecendo atendimento ético, moderno e focado no bem-estar do paciente.
+            Com mais de 10 anos de experiência, o Dr. João Silva atua com tecnologia
+            de ponta e foco total no conforto do paciente.
         </p>
     </div>
 </section>
 
 <section id="contato" class="contact">
-    <h3>Contato</h3>
+    <h3>Fale Conosco</h3>
     <form onsubmit="enviarFormulario(event)">
         <input type="text" placeholder="Nome" required>
         <input type="email" placeholder="Email" required>
-        <textarea rows="4" placeholder="Mensagem" required></textarea>
-        <button type="submit">Enviar</button>
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 - Clínica Odontológica Dr. Adilson Matheus</p>
+    <p>© 2026 • Clínica Odontológica Dr. João Silva</p>
 </footer>
 
-<!-- JavaScript -->
 <script src="script.js"></script>
 </body>
 </html>

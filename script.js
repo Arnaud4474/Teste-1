@@ -6,5 +6,5 @@ function rolarContato() {
 
 function enviarFormulario(event) {
     event.preventDefault();
-    alert("Mensagem enviada com sucesso! Entraremos em contato.");
+    alert("Mensagem enviada! Em breve entraremos em contato 😊");
 }
