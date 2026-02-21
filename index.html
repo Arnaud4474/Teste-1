@@ -1,80 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Dr. Adilson Matheus | Clínica Odontológica</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Adilson Matheus | Atendimento Médico</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-    <h1>Dr. Adilson Matheus</h1>
-    <nav class="nav">
-        <ul class="nav-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato" class="btn-nav">Contato</a></li>
-        </ul>
-        <div class="burger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+  <header>
+    <div class="container nav">
+      <h2 class="logo">Dr. Adilson</h2>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Cuidado, Ética e Excelência Médica</h1>
+      <p>Atendimento humanizado com foco na saúde e bem-estar dos pacientes.</p>
+      <a href="#contato" class="btn">Agendar Consulta</a>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <h2>Especialidades</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Consulta Clínica</h3>
+          <p>Atendimento completo com diagnóstico e orientação personalizada.</p>
         </div>
-    </nav>
-</header>
 
-<section class="hero" id="inicio">
-    <div class="hero-content">
-        <h2>Cuidando do seu sorriso com excelência</h2>
-        <p>Odontologia moderna, segura e humanizada</p>
-        <button onclick="window.open('https://wa.me/5511999999999', '_blank')">Agendar Agora</button>
+        <div class="card">
+          <h3>Exames Preventivos</h3>
+          <p>Prevenção e acompanhamento para manter sua saúde em dia.</p>
+        </div>
+
+        <div class="card">
+          <h3>Acompanhamento Médico</h3>
+          <p>Monitoramento contínuo para tratamentos e cuidados especiais.</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="servicos">
-    <h3>Especialidades</h3>
-    <div class="services">
-        <div class="card">🦷<h4>Clínica Geral</h4><p>Prevenção e saúde bucal.</p></div>
-        <div class="card">😁<h4>Ortodontia</h4><p>Aparelhos modernos.</p></div>
-        <div class="card">🔩<h4>Implantes</h4><p>Sorriso funcional.</p></div>
-        <div class="card">✨<h4>Estética Dental</h4><p>Sorriso perfeito.</p></div>
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <h2>Sobre o Doutor</h2>
+      <p>
+        Dr. Adilson Matheus é um profissional dedicado à medicina, oferecendo atendimento
+        humanizado e comprometido com a saúde e qualidade de vida dos seus pacientes.
+      </p>
     </div>
-</section>
+  </section>
 
-<section id="sobre" class="sobre">
-    <div>
-        <h3>Sobre o Doutor</h3>
-        <p>
-            Com mais de 10 anos de experiência, o Dr. Adilson Matheus atua com tecnologia
-            de ponta e foco total no conforto do paciente.
-        </p>
-    </div>
-</section>
-
-<section id="contato" class="contact">
-    <h3>Fale Conosco</h3>
-    <form onsubmit="enviarFormulario(event)">
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Mensagem" required></textarea>
+  <section class="contato" id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
         <button type="submit">Enviar Mensagem</button>
-    </form>
-</section>
+      </form>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2026 • Clínica Odontológica Dr. João Silva</p>
-</footer>
+  <footer>
+    <p>© 2026 Dr. Adilson Matheus - Todos os direitos reservados</p>
+  </footer>
 
-<!-- WhatsApp Flutuante -->
-<a href="https://wa.me/5511999999999" class="whatsapp" target="_blank">💬</a>
-
-<script src="script.js"></script>
 </body>
 </html>
